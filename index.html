@@ -58,8 +58,8 @@
             }
         }
             async function searchMovies(){
-                const searchTerms = document.getElementById("searchInput").value.trim();
-                const apiUrl =`http://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerms}`;
+                const searchTerm = document.getElementById("searchInput").value.trim();
+                const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}`;
 
                 try {
                     const response = await fetch(apiUrl);
